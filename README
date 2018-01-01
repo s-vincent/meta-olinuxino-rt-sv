@@ -1,0 +1,64 @@
+This README file contains information on the contents of the
+olinuxino-rt-sv layer.
+
+Please see the corresponding sections below for details.
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.yoctoproject.org/poky.git
+  branch: rocko
+
+  URI: git://git.openembedded.org/meta-openembedded
+  layers: meta-oe meta-networking meta-python
+  branch: rocko
+
+  URI: https://github.com/linux-sunxi/meta-sunxi
+  branch: master
+
+
+Patches
+=======
+
+Please submit any patches against the olinuxino-rt-sv layer to the
+xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
+
+Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+
+
+Table of Contents
+=================
+
+  I. Adding the olinuxino-rt-sv layer to your build
+ II. Misc
+
+
+I. Adding the olinuxino-rt-sv layer to your build
+=================================================
+
+--- replace with specific instructions for the olinuxino-rt-sv layer ---
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the olinuxino-rt-sv layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the olinuxino-rt-sv layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-poky \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-olinuxino-rt-sv \
+    "
+
+
+II. Misc
+========
+
+This layer provides PREEMPT-RT kernel for Olimex Olinuxino.
+
