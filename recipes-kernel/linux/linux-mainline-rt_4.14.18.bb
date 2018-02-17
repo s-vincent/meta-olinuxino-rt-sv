@@ -15,10 +15,10 @@ KERNEL_EXTRA_ARGS += "LOADADDR=${UBOOT_ENTRYPOINT}"
 
 S = "${WORKDIR}/linux-${PV}"
 	
-SRC_URI[md5sum] = "2b772ad12fddd77ade316d87bc62a499"
-SRC_URI[sha256sum] = "8b96362eb55ae152555980e7193fe2585b487176fb936cc69b8947d7dd32044a"
+SRC_URI[md5sum] = "e4604a84ea2b1f2162f40b7a3080239b"
+SRC_URI[sha256sum] = "866a94c1c38d923ae18e74b683d7a8a79b674ebdfe7f40f1a3be9a27d39fe354"
 
 SRC_URI = "https://www.kernel.org/pub/linux/kernel/v4.x/linux-${PV}.tar.xz \
-           file://patch-4.14.12-rt10.patch \
+           file://patch-4.14.18-rt15.patch \
            file://defconfig \
           "
